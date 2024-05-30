@@ -7,11 +7,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
               crossorigin="anonymous">
-        <title>Crear un nuevo trabajo</title>
+        <title>Crear un nuevo employee</title>
     </head>
     <body>
         <div class='container'>
-            <h1 class='mb-3'>Crear un nuevo trabajo</h1>
+            <h1 class='mb-3'>Crear un nuevo employee</h1>
             <!--
                 para enviar un form necesito 4 cosas:
                     - método http: post
@@ -21,21 +21,27 @@
             -->
             <form method="post" action="<%=request.getContextPath()%>/JobServlet">
                 <div class="mb-3">
-                    <labe>Job ID</labe>
+                    <labe>birth date</labe>
                     <input type="text" class="form-control" name="jobId">
                 </div>
                 <div class="mb-3">
-                    <label>Job Title</label>
+                    <label>first name</label>
                     <input type="text" class="form-control" name="jobTitle">
                 </div>
                 <div class="mb-3">
-                    <label>Min Salary</label>
+                    <label>last name</label>
                     <input type="text" class="form-control" name="minSalary">
                 </div>
                 <div class="mb-3">
-                    <label>Max Salary</label>
+                    <label>gender</label>
                     <input type="text" class="form-control" name="maxSalary">
                 </div>
+
+                <div class="mb-3">
+                    <label>hire date</label>
+                    <input type="text" class="form-control" name="maxSalary">
+                </div>
+
                 <a href="<%=request.getContextPath()%>/JobServlet" class="btn btn-danger">Regresar</a>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

@@ -12,23 +12,36 @@
     </head>
     <body>
         <div class='container'>
-            <h1 class='mb-3'>Editar un trabajo</h1>
+            <h1 class='mb-3'>Editar un employee</h1>
             <form method="post" action="<%=request.getContextPath()%>/JobServlet?action=e">
                 <div class="mb-3">
                     <input type="hidden" class="form-control" name="jobId" value="<%=job.getJobId()%>">
                 </div>
                 <div class="mb-3">
-                    <label>Job Title</label>
+                    <label>birth date</label>
                     <input type="text" class="form-control" name="jobTitle" value="<%=job.getJobTitle()%>">
                 </div>
+
                 <div class="mb-3">
-                    <label>Min Salary</label>
-                    <input type="text" class="form-control" name="minSalary" value="<%=job.getMinSalary()%>">
+                    <label>first name</label>
+                    <input type="text" class="form-control" name="jobTitle" value="<%=job.getJobTitle()%>">
                 </div>
+
                 <div class="mb-3">
-                    <label>Max Salary</label>
-                    <input type="text" class="form-control" name="maxSalary" value="<%=job.getMaxSalary()%>">
+                    <label>last name</label>
+                    <input type="text" class="form-control" name="jobTitle" value="<%=job.getJobTitle()%>">
                 </div>
+
+                <div class="mb-3">
+                    <label>gender</label>
+                    <input type="text" class="form-control" name="jobTitle" value="<%=job.getJobTitle()%>">
+                </div>
+
+                <div class="mb-3">
+                    <label>hire date</label>
+                    <input type="text" class="form-control" name="jobTitle" value="<%=job.getJobTitle()%>">
+                </div>
+
                 <a href="<%=request.getContextPath()%>/JobServlet" class="btn btn-danger">Regresar</a>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

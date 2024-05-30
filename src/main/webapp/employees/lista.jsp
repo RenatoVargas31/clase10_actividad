@@ -5,7 +5,7 @@
 <jsp:useBean id="lista" scope="request" type="ArrayList<Job>" />
 <html>
     <head>
-        <title>Trabajos</title>
+        <title>Employees</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -29,12 +29,12 @@
             </form>
             <table class="table table-striped mt-3">
                 <tr class="table-primary">
-                    <th>ID</th>
-                    <th>Job Title</th>
-                    <th>Min Salary</th>
-                    <th>Max Salary</th>
-                    <th></th>
-                    <th></th>
+                    <th>emp_no</th>
+                    <th>birth date</th>
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>gender</th>
+                    <th>hire date</th>
                 </tr>
                 <% for (Job job : lista) { %>
                 <tr>
