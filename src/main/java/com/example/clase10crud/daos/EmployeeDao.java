@@ -44,7 +44,7 @@ public class EmployeesDao {
 
         return lista;
     }
-    public void crear(String EmployeeId, String HireDate, int Firstname, int maxSalary){
+    public void crear(String employeeId, String hireDate, int Firstname, int maxSalary){
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
