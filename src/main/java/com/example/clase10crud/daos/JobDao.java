@@ -8,7 +8,8 @@ import java.util.ArrayList;
 
 public class JobDao {
 
-    public ArrayList<Job> listar(){
+    public ArrayList<Job> listar()
+    {
 
         ArrayList<Job> lista = new ArrayList<>();
 
